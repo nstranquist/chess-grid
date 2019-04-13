@@ -1,0 +1,65 @@
+/* variables */
+:root {
+    --white: #f0f0f0;
+    --black: #111;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+main {
+    min-height: 1000px;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+/* Chess Board styles */
+.chess-container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-auto-rows:  50px;
+    list-style-type: none;
+}
+
+.black {
+    width: 100%;
+    height: auto;
+    background: var(--black);
+}
+.white {
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+/* Nav styles */
+header {
+    background: gray;
+}
+header nav {
+    padding: 10px 20%;
+    display: flex;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    padding: 5px 10px;
+}
+li:hover{
+    cursor: pointer;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--white);
+}
