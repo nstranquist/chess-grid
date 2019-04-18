@@ -19,14 +19,24 @@ body {
 /* Layout styles */
 .page-layout-grid {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-areas: 
+        "chess"
+        "options"
+        "footer";
     grid-template-rows: auto;
 }
+@media only screen and (min-width: 1300px) {
+    .page-layout-grid {
+        grid-template-columns: 1fr 6fr;
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5vh;
+    grid-area: "chess";
 }
 
 /* Chess Board styles */
@@ -54,6 +64,9 @@ main {
 /* Header styles */
 header {
     background: var(--highlight);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-area: "options";
 }
 .options-header {
     text-align: center;
@@ -93,10 +106,17 @@ nav h1 {
 /* Footer styles */
 footer {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     border-top: 1px solid var(--highlight);
     padding-top: 2rem;
     padding-bottom: 2rem;
+    grid-area: "footer";
+}
+@media only screen and (min-width: 1300px) {
+    footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 small {
     display: block;
