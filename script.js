@@ -1,10 +1,17 @@
+function $(id) {
+    return document.getElementById(id);
+}
 
-document.getElementById("toggle-bw").addEventListener("click", function() {
-    alert("black/white toggled");
+$("toggle-bw").addEventListener("click", function() {
+    changeColor("toggle-bw");
 });
-document.getElementById("toggle-rb").addEventListener("click", function() {
-    alert("red/brown toggled");
+$("toggle-rb").addEventListener("click",  function() {
+    changeColor("toggle-rb");
 });
-document.getElementById("toggle-yg").addEventListener("click", function() {
-    alert("yellow/green toggled");
+$("toggle-yg").addEventListener("click",  function() {
+    changeColor("toggle-yg");
 });
+
+function changeColor(color) {
+    alert(color + " was toggled!");
+}
