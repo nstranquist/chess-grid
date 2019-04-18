@@ -90,12 +90,14 @@ nav h1 {
 
 /* Footer styles */
 footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
     border-top: 1px solid var(--highlight);
     padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 small {
     display: block;
     text-align: center;
-    line-height: 1.5;
+    line-height: 2;
 }
