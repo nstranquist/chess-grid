@@ -62,17 +62,26 @@ main {
         grid-auto-rows:  50px;
     }
 }
+    /* square colors and styles*/
+    .black {
+        background-color: var(--black);
+    }
+    .white {
+        background-color: white;
+    }
+    .red {
+        background-color: #B80F0A;
+    }
+    .brown {
+        background-color: #5E1914; /* "Sangria" */
+    }
+    .green {
+        background-color: green;
+    }
+    .yellow {
+        background-color: yellow;
+    }
 
-.black {
-    width: 100%;
-    height: auto;
-    background: var(--black);
-}
-.white {
-    width: 100%;
-    height: auto;
-    background: white;
-}
 /* Chess Options styles */
 .options-container {
     background: var(--highlight);
