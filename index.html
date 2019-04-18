@@ -9,104 +9,107 @@
         <link rel="stylesheet" type="text/css" href="./style.css" />
     </head>
     <body>
-        <header>
-            <nav>
-                <h1 class="logo"><a href="#">Chess Grid</a></h1>
-                <ul>
-                    <li><a href="#" id="toggle-bw">Black/White</a></li>
-                    <li><a href="#" id="toggle-rb">Red/Brown</a></li>
-                    <li><a href="#" id="toggle-yg">Green/Yellow</a></li>
+        <div class="page-layout-grid">
+            <header>
+                <h1 class="options-header">Chess Grid</h1>
+                <h3 class="options-header">Options</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#" id="toggle-bw">Black/White</a></li>
+                        <li><a href="#" id="toggle-rb">Red/Brown</a></li>
+                        <li><a href="#" id="toggle-yg">Green/Yellow</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <h1>Chess Board!</h1>
+                <ul class="chess-container">
+                    <!-- Row 1 -->
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <!-- Row 2 -->
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <!-- Row 3 -->
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <!-- Row 4-->
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <!-- Row 5 -->
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <!-- Row 6 -->
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <!-- Row 7 -->
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <!-- Row 8 -->
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
+                    <li class="white"></li>
+                    <li class="black"></li>
                 </ul>
-            </nav>
-        </header>
 
-        <main>
-            <h1>Chess Board!</h1>
-            <ul class="chess-container">
-                <!-- Row 1 -->
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <!-- Row 2 -->
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <!-- Row 3 -->
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <!-- Row 4-->
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <!-- Row 5 -->
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <!-- Row 6 -->
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <!-- Row 7 -->
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <!-- Row 8 -->
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-                <li class="white"></li>
-                <li class="black"></li>
-            </ul>
+                <section class="board-options">
 
-            <section class="board-options">
+                </section>
 
-            </section>
+                <script type="text/javascript" src="script.js"></script>
+            </main>
 
-            <script type="text/javascript" src="script.js"></script>
-        </main>
-
-        <footer>
-            <small>Made by Nico, 2019</small>
-            <small>www.github.com/nstranquist</small>
-        </footer>
+            <footer>
+                <small>Made by Nico, 2019</small>
+                <small>www.github.com/nstranquist</small>
+            </footer>
+        </div>
     </body>
 </html>
