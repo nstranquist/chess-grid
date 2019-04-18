@@ -51,11 +51,18 @@ main {
     height: auto;
     background: white;
 }
-
-/* Nav styles */
+/* Header styles */
 header {
     background: var(--highlight);
 }
+.options-header {
+    text-align: center;
+}
+#active-options {
+    text-align: center;
+}
+
+/* Nav styles */
 header nav {
     padding: .75rem 3rem;
     display: flex;
@@ -81,11 +88,6 @@ a:hover {
 }
 nav h1 {
     float: left;
-}
-
-/* Header styles */
-.options-header {
-    text-align: center;
 }
 
 /* Footer styles */
