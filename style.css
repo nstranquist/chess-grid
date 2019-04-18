@@ -50,6 +50,18 @@ main {
     padding-left: 0;
     grid-gap: 0px;
 }
+@media only screen and (max-width: 820px) {
+    .chess-container {
+        grid-template-columns: repeat(8, 75px);
+        grid-auto-rows:  75px;
+    }
+}
+@media only screen and (max-width: 620px) {
+    .chess-container {
+        grid-template-columns: repeat(8, 50px);
+        grid-auto-rows:  50px;
+    }
+}
 
 .black {
     width: 100%;
@@ -61,8 +73,8 @@ main {
     height: auto;
     background: white;
 }
-/* Header styles */
-header {
+/* Chess Options styles */
+.options-container {
     background: var(--highlight);
     grid-column-start: 1;
     grid-column-end: 2;
