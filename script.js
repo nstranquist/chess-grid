@@ -1,6 +1,7 @@
 function $(id) {
     return document.getElementById(id);
 }
+/* used to remove color classes more easily */
 HTMLElement.prototype.removeClass = function(remove) {
     var newClassName = "";
     var i;
@@ -17,23 +18,22 @@ $("toggle-bw").addEventListener("click", function() {
     changeColor("black", "white");
 });
 $("toggle-rb").addEventListener("click",  function() {
-    changeColor("red", "brown");
+    changeColor("brown", "red");
 });
 $("toggle-yg").addEventListener("click",  function() {
-    changeColor("yellow", "green");
+    changeColor("green", "yellow");
 });
 
 function changeColor(darkColor, lightColor) {
     /* change chess board */
     const darkSquares = document.getElementsByClassName('dark');
+    const lightSquares = document.getElementsByClassName('light');
     for(let i=0; i<darkSquares.length; i++) {
+        /* remove old dark color, add new dark color */
         removeColors(darkSquares[i], 1);
         darkSquares[i].classList.add("class", darkColor);
-        console.log(i, darkSquares[i]);
-    }
 
-    const lightSquares = document.getElementsByClassName('light');
-    for(let i=0; i<lightSquares.length; i++) {
+        /* remove old light color, add new light color */
         removeColors(lightSquares[i], 2);
         lightSquares[i].classList.add("class", lightColor);
     }
@@ -47,13 +47,13 @@ function removeColors(squareItem, darkOrLight) {
     // 1 is for dark
     if(darkOrLight === 1) {
         squareItem.removeClass("black");
-        squareItem.removeClass("red");;
-        squareItem.removeClass("yellow");
+        squareItem.removeClass("brown");;
+        squareItem.removeClass("green");
     }
     //2 is for light
     else if(darkOrLight===2 ) {
         squareItem.removeClass("white");
-        squareItem.removeClass("brown");
-        squareItem.removeClass("green");
+        squareItem.removeClass("red");
+        squareItem.removeClass("yellow");
     }
 }
