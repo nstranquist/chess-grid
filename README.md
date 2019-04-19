@@ -1,4 +1,4 @@
-# Chess-Grid Project - Started April 18
+# Chess-Grid Project
 
 ### Goal
 The goal of this project was to build a chess board that can change colors depending on the option selected. It was also done to practice using css grid and javascript.
